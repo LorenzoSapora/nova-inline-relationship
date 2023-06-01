@@ -4,6 +4,8 @@ namespace KirschbaumDevelopment\NovaInlineRelationship\Observers;
 
 use Laravel\Nova\Nova;
 use Illuminate\Database\Eloquent\Model;
+use Laravel\Nova\Exceptions\ResourceMissingException;
+use Laravel\Nova\Http\Requests\NovaRequest;
 use KirschbaumDevelopment\NovaInlineRelationship\Integrations\Integrate;
 use KirschbaumDevelopment\NovaInlineRelationship\NovaInlineRelationship;
 use KirschbaumDevelopment\NovaInlineRelationship\Contracts\RelationshipObservable;
